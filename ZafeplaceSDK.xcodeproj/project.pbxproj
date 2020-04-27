@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660E284FE63FBAF07658EEE8 /* Pods_ZafeplaceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B14F79FD690214D5970E9EDE /* Pods_ZafeplaceSDK.framework */; };
 		D51CD2AD21946AC900B56075 /* StellarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51CD2AC21946AC900B56075 /* StellarModel.swift */; };
 		D527A87A2191C8E700069408 /* StellarProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D527A8792191C8E700069408 /* StellarProvider.swift */; };
 		D5309F2B224D223000DE6BAA /* ExecuteMethodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5309F2A224D223000DE6BAA /* ExecuteMethodModel.swift */; };
@@ -102,6 +103,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85AF659523A2ABB03476E2CD /* Pods-ZafeplaceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZafeplaceSDK.release.xcconfig"; path = "Target Support Files/Pods-ZafeplaceSDK/Pods-ZafeplaceSDK.release.xcconfig"; sourceTree = "<group>"; };
+		B14F79FD690214D5970E9EDE /* Pods_ZafeplaceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZafeplaceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51CD2AC21946AC900B56075 /* StellarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarModel.swift; sourceTree = "<group>"; };
 		D527A8792191C8E700069408 /* StellarProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarProvider.swift; sourceTree = "<group>"; };
 		D5309F2A224D223000DE6BAA /* ExecuteMethodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteMethodModel.swift; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 		DAF7C5C3209B0E3E00839A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAF7C5C6209B0E3E00839A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAF7C5C8209B0E3E00839A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E21CFC4674CFDC031787D6AC /* Pods-ZafeplaceSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZafeplaceSDK.debug.xcconfig"; path = "Target Support Files/Pods-ZafeplaceSDK/Pods-ZafeplaceSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		F90545CA2450D83B00F4718F /* stellarsdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = stellarsdk.xcodeproj; path = "stellar-ios-mac-sdk-master/stellarsdk/stellarsdk.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD8C448209C53EF00EDF522 /* LocalAuthentication.framework in Frameworks */,
+				660E284FE63FBAF07658EEE8 /* Pods_ZafeplaceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,8 +162,19 @@
 			isa = PBXGroup;
 			children = (
 				DAD8C447209C53EE00EDF522 /* LocalAuthentication.framework */,
+				B14F79FD690214D5970E9EDE /* Pods_ZafeplaceSDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB1401F74C24DBE1A73ED371 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E21CFC4674CFDC031787D6AC /* Pods-ZafeplaceSDK.debug.xcconfig */,
+				85AF659523A2ABB03476E2CD /* Pods-ZafeplaceSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		DA3CBBB320A325CE0018782A /* Providers */ = {
@@ -233,6 +249,7 @@
 				DAF7C5BB209B0E3D00839A1D /* ZafeplaceSDK */,
 				DAF7C5BA209B0E3D00839A1D /* Products */,
 				0B605B8542B65F4D3F92A3BB /* Frameworks */,
+				BB1401F74C24DBE1A73ED371 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,9 +306,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAF7C5CB209B0E3E00839A1D /* Build configuration list for PBXNativeTarget "ZafeplaceSDK" */;
 			buildPhases = (
+				00FDE669BCF8E67EED914446 /* [CP] Check Pods Manifest.lock */,
 				DAF7C5B5209B0E3D00839A1D /* Sources */,
 				DAF7C5B6209B0E3D00839A1D /* Frameworks */,
 				DAF7C5B7209B0E3D00839A1D /* Resources */,
+				499F3119FD355EBC68165CC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -408,6 +427,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00FDE669BCF8E67EED914446 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZafeplaceSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		499F3119FD355EBC68165CC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZafeplaceSDK/Pods-ZafeplaceSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZafeplaceSDK/Pods-ZafeplaceSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZafeplaceSDK/Pods-ZafeplaceSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAF7C5B5209B0E3D00839A1D /* Sources */ = {
@@ -599,6 +660,7 @@
 		};
 		DAF7C5CC209B0E3E00839A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21CFC4674CFDC031787D6AC /* Pods-ZafeplaceSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -620,6 +682,7 @@
 		};
 		DAF7C5CD209B0E3E00839A1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85AF659523A2ABB03476E2CD /* Pods-ZafeplaceSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

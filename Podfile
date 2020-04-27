@@ -12,4 +12,5 @@ target 'ZafeplaceSDK' do
 # pod 'web3swift', git: 'https://github.com/BANKEX/web3swift.git', :inhibit_warnings => true
 #pod 'stellar-ios-mac-sdk', '~> 1.5.6'
 pod 'web3swift', :git => 'https://github.com/bankex/web3swift.git'
+pod 'CryptoSwift', '~> 0.13.0'
 end
