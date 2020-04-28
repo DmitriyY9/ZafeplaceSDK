@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZafeplaceSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Zafeplace SDK is a library for simple working with some crypto currency.'
 
 # This description is used to generate tags and improve search results.
