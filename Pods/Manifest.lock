@@ -15,7 +15,7 @@ PODS:
   - scrypt.c (0.1.1)
   - secp256k1.c (0.1.2)
   - SipHash (1.2.2)
-  - web3swift (2.1.10):
+  - web3swift.pod (2.1.10):
     - BigInt (~> 3.1)
     - keccak.c (~> 0.1)
     - PromiseKit (~> 6.4)
@@ -24,7 +24,7 @@ PODS:
 
 DEPENDENCIES:
   - CryptoSwift (~> 0.13.0)
-  - web3swift (from `https://github.com/bankex/web3swift.git`)
+  - web3swift.pod
 
 SPEC REPOS:
   trunk:
@@ -35,15 +35,7 @@ SPEC REPOS:
     - scrypt.c
     - secp256k1.c
     - SipHash
-
-EXTERNAL SOURCES:
-  web3swift:
-    :git: https://github.com/bankex/web3swift.git
-
-CHECKOUT OPTIONS:
-  web3swift:
-    :commit: 2a3cffff922013e3e3205dee6e82aa976ecc047e
-    :git: https://github.com/bankex/web3swift.git
+    - web3swift.pod
 
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
@@ -53,8 +45,8 @@ SPEC CHECKSUMS:
   scrypt.c: b42ae06183251329d2b2c620c226fb541a4a3592
   secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
-  web3swift: 2ab62132eb013b29e949f97c201a8fcf6c9e1fef
+  web3swift.pod: e3bd1c18a84e9fc1c4bfab8ebc0754b0806a7bcd
 
-PODFILE CHECKSUM: abd34d79be94640ffe812982a4c0237521c05639
+PODFILE CHECKSUM: 10964b76ad085748b3b881d6687ac6d8d345c8fe
 
 COCOAPODS: 1.9.1
