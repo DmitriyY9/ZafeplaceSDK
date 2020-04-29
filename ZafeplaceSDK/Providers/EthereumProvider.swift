@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import web3swift
+import Web3swift
 import BigInt
 
 final class EthereumProvider: BaseProvider {
