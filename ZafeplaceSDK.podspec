@@ -41,4 +41,5 @@ Pod::Spec.new do |s|
   
   s.dependency 'CryptoSwift', '~> 0.13.0'
   s.dependency 'web3swift'
+  s.dependency 'stellar-ios-mac-sdk'
 end
