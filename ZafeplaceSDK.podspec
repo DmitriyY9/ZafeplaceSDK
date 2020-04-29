@@ -40,5 +40,5 @@ Pod::Spec.new do |s|
   #s.dependency 'AFNetworking', '~> 2.3'
   
   s.dependency 'CryptoSwift', '~> 0.13.0'
-  s.dependency 'web3swift', :git => 'https://github.com/bankex/web3swift.git'
+  s.dependency 'web3swift'
 end
